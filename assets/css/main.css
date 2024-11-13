@@ -1,0 +1,1146 @@
+/*======================
+   01. Google fonts
+========================*/
+@font-face {
+  font-family: bromega-Regular;
+  src: url(../webfonts/bromega-Regular.ttf);
+}
+
+@font-face {
+  font-family: bromega-Bold;
+  src: url(../webfonts/bromega-Bold.ttf);
+}
+
+
+
+/* body{
+  font-family: 'OpenSans',arial;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rajdhani',sans-serif;
+}
+p{
+  font-family: 'OpenSans',arial;
+}
+.container{
+  align-self: flex-end;
+  margin:0 auto;
+  width: 75%;
+} */
+
+
+
+/*=================
+///// NAVBAR /////
+===============*/
+.navbar {
+  background: rgb(0, 72, 215);
+  background: linear-gradient(90deg, rgba(0, 72, 215, 1) 19%, rgba(106, 112, 241, 1) 78%);
+}
+ 
+.navbar-brand {
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+/* .navbar-brand img {
+  height: 75px;
+  margin-left: 10px;
+  vertical-align: middle;
+} */
+
+
+
+/* .navbar .navbar-toggler[aria-expanded="true"] {
+  color: #9933CC!important;
+  }
+  .navbar .navbar-toggler{
+  color: #ff4444;
+  } */
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* .dropdown-hover:hover .dropdown-menu {
+  display: block;
+} */
+
+/* .dropdown-menu {
+  display: none;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background: #fff;
+  min-width: 240px;
+  top: 115%;
+  opacity: 0;
+  padding: 0px;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+  border: 0px;
+  border-top: 5px solid #003294;
+} */
+
+/* .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.dropdown-item {
+  padding: 13px 20px;
+  border-bottom: 1px solid #eee;
+  background: transparent;
+  font-weight: 400;
+  color: #555;
+}
+
+.dropdown-item:hover {
+  color: #0048D7;
+}  */
+
+/* Menampilkan menu dropdown saat kursor diarahkan ke link dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Menghilangkan jarak antara dropdown dan link */
+}
+
+/* Mengubah warna latar belakang dropdown link saat hover */
+.nav-item.dropdown:hover .nav-link {
+  background-color: #f8f9fa00;
+}
+
+
+
+
+
+
+/*=============================
+////// BERITA SECTION /////////
+============================*/
+.clear {
+  clear: both;
+}
+
+.berita-page .content {
+  padding: 20px;
+}
+
+.berita-page {
+  margin-bottom: 40px;
+}
+
+.berita-page .judul_section {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.berita-page .judul_section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem; /* Ukuran font besar untuk judul */
+  margin: 0;
+}
+
+.berita-page .judul_section hr {
+  width: 250px;
+  border-top: 3px solid #024959;
+  margin: 0 auto 20px;
+}
+
+.berita-page .berita_section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.berita-page .grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.berita-page .cover_grid_news {
+  width: 270px;
+  height: auto;
+}
+
+.berita-page .cover_grid_news img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.berita-page .read-more {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.berita-page .judul {
+  margin: 0;
+}
+
+.berita-page .judul h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+.berita-page .judul h3 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.berita-page .judul h3 a:hover {
+  color: #0048D7;
+}
+
+.berita-page .attr p {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.berita-page .attr p a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.berita-page .attr p a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.berita-page .isi p {
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.berita-page .tombol_lihat a {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.berita-page .tombol_lihat a:hover {
+  color: #0048D7;
+}
+
+@media (max-width: 768px) {
+  .berita-page .berita_section .grid {
+    flex-direction: column;
+  }
+
+  .berita-page .cover_grid_news {
+    margin-bottom: 15px;
+  }
+
+  .berita-page .judul_section h1 {
+    font-size: 2rem; /* Ukuran font lebih kecil untuk perangkat mobile */
+  }
+
+  .berita-page .judul h3 {
+    font-size: 1.25rem;
+  }
+
+  .berita-page .isi p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .berita-page .content {
+    padding: 10px;
+  }
+
+  .berita-page .judul h3 {
+    font-size: 1rem;
+  }
+
+  .berita-page .isi p {
+    font-size: 0.75rem;
+  }
+}
+
+
+
+/*=================
+///// GALERI /////
+===============*/
+.galeri {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.galeri img {
+  margin: 5px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+  max-width: 17vw;
+  /* width: 300px; */
+  height: 100%;
+}
+.img{
+  margin: 5px;
+  margin-right: 0px;
+  max-width: 240px;
+  height: 100%;
+}
+/* Lihat Artikel */
+.artikel-section{
+  margin: 10px 0;
+}
+.artikel-section .attr{
+  margin-bottom: 25px;
+}
+.img-artikel{
+  display: inline-block;
+}
+.img-artikel img{
+  margin-right: 15px;
+  width:200px;
+  max-width: 600px;
+}
+
+
+
+
+
+
+
+.copyright-section{
+  text-align: center;
+  color: white;
+  background-color: #024959;
+  height: 50px;
+  /* flex: 1; */
+  margin-top: 90px;
+}
+
+
+
+
+
+
+
+/*=========================
+///// Card sliders ////////   
+========================*/
+
+/* Global Styles */
+button:focus, input:focus, textarea:focus {
+  outline: 0;
+}
+
+.carousel-item img {
+  box-sizing: border-box;
+  /* background: url('../images/bg.jpg'); */
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  left: 0;
+  right: 0;
+  height: 560px;
+  object-fit: cover;
+}
+.carousel-caption h5 {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.carousel-caption p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.carousel-caption {
+  font-style: normal;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+
+
+
+/*===============================
+///// Card Wrapper Styling /////
+ ============================*/
+.card_wrapper {
+  background: linear-gradient(180deg, rgba(0,72,215,1) 19%, rgba(106,112,241,1) 78%);
+  width: 100%;
+  padding: 40px 0; /* Adjusted for padding instead of fixed height */
+  display: flex;
+  align-items: center;
+}
+
+/* Section Title */
+.card_wrapper .judul_section {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card_wrapper .judul_section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+  margin: 0;
+}
+
+.card_wrapper .judul_section hr {
+  width: 150px;
+  border-top: 3px solid #ffffff;
+  margin: 10px auto 0;
+}
+
+/* Card Box Styling */
+.card_wrapper .card_box {
+  background: #ffffff;
+  border-radius: 15px;
+  margin: 10px;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.card_wrapper .card_box {
+  background: #ffffff;
+  border-radius: 15px;
+  margin: 10px;
+  overflow: hidden; /* Menyembunyikan bagian gambar yang melebihi area card */
+  transition: transform .3s, box-shadow .3s;
+}
+
+.card_wrapper .card_box img {
+  border-radius: 15px 15px 0 0; /* Menyesuaikan border-radius gambar dengan card */
+}
+
+.card_wrapper .card_box:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+.card_wrapper .card_box:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+.card_wrapper .card_text {
+  padding: 20px;
+  text-align: center;
+}
+
+.card_wrapper .card_text h3 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.card_wrapper .card_text p {
+  font-size: 1rem;
+  color: #23273A;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Owl Carousel Navigation Styling */
+.card_wrapper .slider_carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.card_wrapper .slider_carousel .owl-prev, .slider_carousel .owl-next {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card_wrapper .slider_carousel .owl-next {
+  right: -20px;
+}
+
+.card_wrapper .slider_carousel .owl-prev {
+  left: -20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card_wrapper .card_text h3 {
+      font-size: 1.25rem;
+  }
+
+  .card_wrapper .card_text p {
+      font-size: 0.95rem;
+  }
+
+  .card_wrapper .slider_carousel .owl-prev, .slider_carousel .owl-next {
+      width: 35px;
+      height: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card_wrapper .card_wrapper {
+      padding: 20px 0;
+  }
+
+  .card_wrapper .judul_section h2 {
+      font-size: 1.75rem;
+  }
+
+  .card_wrapper .card_text h3 {
+      font-size: 1rem;
+  }
+
+  .card_wrapper .card_text p {
+      font-size: 0.875rem;
+  }
+
+  .card_wrapper .slider_carousel .owl-prev, .slider_carousel .owl-next {
+      display: none;
+  }
+}
+
+
+/* ================
+////// Peta //////
+===============*/
+/* .peta  {
+  
+  
+} */
+.peta .card-header {
+  background: rgb(0,72,215);
+  background: radial-gradient(circle, rgba(0,72,215,1) 19%, rgba(106,112,241,1) 78%);
+  color: white;
+  font-weight: bold;
+}
+.peta .card-body {
+  padding: 10px 0;
+}
+.peta .custom-text {
+  color: rgb(255, 255, 255); /* Ganti warna sesuai keinginan Anda */
+}
+.peta .map-container {
+  height: 300px;
+}
+.peta .map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 40.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+.peta .map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+
+/*========================
+////// Card Berita //////
+========================*/
+.berita .title {
+  text-align: center;
+  
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.berita .card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.berita .card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+}
+.berita .card img {
+  width: 100%;
+  height: 468px;
+  display: block;
+  
+}
+
+.berita .card-body {
+  padding: 15px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.berita .card-body h3 a {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff; /* Ganti dengan warna yang diinginkan */
+  text-decoration: none; /* Ini opsional, untuk menghilangkan garis bawah */
+}
+.berita .card-body h3 a:hover {
+  color: #003294; /* Warna saat judul di-hover */
+}
+
+.berita .card-body p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.berita .tombol_lihat a {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.berita .tombol_lihat a:hover {
+  color: #0048D7;
+}
+.berita .icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle; 
+  fill: currentColor; 
+  margin-left: 0.25em; 
+}
+
+
+
+
+/*=======================
+///// GALERI FOTO //////
+=====================*/
+
+.galeri-page .title {
+  text-align: start;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.galeri-page .card-container {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.galeri-page .card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 0 1 calc(25% - 15px); /* 25% lebar setiap card, dengan margin dikurangkan */
+  margin-bottom: 20px; /* Spasi bawah antara baris */
+  position: relative;
+}
+
+.galeri-page .card img {
+  width: 100%;
+  height: 200px; /* Atur tinggi gambar agar sesuai dengan card */
+  object-fit: cover; /* Pastikan gambar selalu memenuhi card tanpa distorsi */
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.galeri-page .card:hover img {
+  transform: scale(1.1);
+}
+
+.galeri-page .zoom-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.galeri-page .card:hover .zoom-icon {
+  opacity: 1;
+}
+
+.galeri-page .card-body {
+  padding: 15px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.galeri-page .card-body h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.galeri-page .card-body p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+
+
+/*===================
+////// FOOTER //////
+=================*/
+.site-footer {
+  background-color: #0048D7;
+  color: #ffffff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact-section hr {
+  border-top: 3px solid #dacece;
+  height: 2px;
+  width: 104px;
+}
+.stats-section hr {
+  border-top: 3px solid #dacece;
+  height: 2px;
+  width: 150px;
+}
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.footer-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-section i {
+  margin-right: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #00aced;
+}
+
+.stats-section h4, .contact-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.stats-section p {
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+  .footer-content {
+      flex-direction: column;
+  }
+}
+
+
+/* VISI DAN MISI */
+/* .page-title {
+  padding: 120px 0px 70px 0px;
+  position: relative;
+}
+
+.page-title .block h1 {
+  color: #fff;
+}
+
+.page-title .block p {
+  color: #fff;
+}
+
+.page-title .breadcumb-nav {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+} */
+
+
+
+
+
+
+
+
+
+/*=============================
+///// Page Title Section /////
+===========================*/
+.page-title {
+  padding: 120px 0 70px;
+  position: relative;
+  background-image: url("C:\xampp\htdocs\profdesa\img\banner-galeri.png") no-repeat center center;
+  background-size: cover;
+}
+
+.page-title .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.page-title .block h1 {
+  color: #fff;
+  font-size: 3.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.page-title .breadcrumb {
+  background: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.page-title .breadcrumb-item + .breadcrumb-item::before {
+  content: "\2022"; /* Adds a dot between breadcrumb items */
+  color: #fff;
+}
+
+.page-title .breadcrumb-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-title .breadcrumb-item.active {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .page-title .block h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title .block h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+/* Department Content */
+.department-content {
+  margin-top: 50px;
+}
+
+.department-content h3 {
+  font-size: 2.25rem;
+  color: #223a66;
+}
+
+.divider {
+  width: 40px;
+  height: 5px;
+  background: #0048D7;
+  margin: 20px 0;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #23273A;
+}
+
+.strong-text {
+  font-weight: bold;
+  color: #223a66;
+}
+
+.department-service {
+  list-style: none;
+  padding-left: 0;
+}
+
+.department-service li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #23273A;
+}
+
+.department-service i {
+  color: #e12454;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .department-content h3 {
+      font-size: 1.75rem;
+  }
+
+  .lead {
+      font-size: 1.1rem;
+  }
+
+  .department-service li {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .department-content h3 {
+      font-size: 1.5rem;
+  }
+
+  .lead {
+      font-size: 1rem;
+  }
+
+  .department-service li {
+      font-size: 0.9rem;
+  }
+}
+
+
+
+
+/*=======================
+///// GALERI VIDEO /////
+=====================*/
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+ .title-gallery  {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
+}
+.video-gallery .modal-title h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #000;
+}
+
+.video-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background-color: #000;
+}
+
+.thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: url('play-icon.png') no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  color: #0048D7;
+  opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.thumbnail .play-button svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+.thumbnail:hover .play-button {
+  transform: translate(-50%, -50%) scale(1.2) rotate(360deg);
+  opacity: 1;
+}
+
+.thumbnail h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+
+/*==========================
+////// Tentang Desa //////
+=========================*/
+.about {
+  margin-bottom: 50px;
+  
+}
+.about .video-wrapper {
+  margin-bottom: 40px;
+}
+
+.about .description-wrapper h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.about .description-wrapper p {
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/*=========================
+////// DATA PENDUDUK /////
+=======================*/
+.data-penduduk {
+  background: rgb(0, 72, 215);
+  background: linear-gradient(90deg, rgba(0,72,215,1) 19%, rgba(106,112,241,1) 78%);
+  padding:  50px 0;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.data-penduduk .data-item {
+  color: rgb(255, 255, 255);
+}
+
+.data-penduduk h3 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.data-penduduk p {
+  font-size: 1.2rem;
+  margin-top: -10px;
+}
+
+.data-penduduk i svg {
+  width: 50px;
+  height: 50px;
+  fill: #ffffff;
+}
+.data-penduduk h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
